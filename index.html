@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/all.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -21,14 +22,27 @@
       <li class="divider"></li>
       <li><a href="#!">three</a></li>
     </ul>
+     <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+      <ul id="dropdown3" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
     <nav>
       <div class="white nav-wrapper">
-        <a href="#!" class="brand-logo"><img style="width: 50%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
+        <a href="#!" id="div1" class="brand-logo"><img style="width: 50%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
         <ul class="right  blue-text hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">L'Institut<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Aprender francés<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Arte y Cultura<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Agenda<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
       </div>
     </nav>
@@ -40,9 +54,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center blue-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center blue-text text-lighten-2">Institut français d'Espagne</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Cours en ligne | Agenda culturel | Cooperation</h5>
         </div>
         <div class="row center">
           <a href="#" id="download-button" class="btn-large waves-effect waves-light  blue lighten-1">Get Started</a>
@@ -51,14 +65,53 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="baground4.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="salle.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
-   <section id="services">
+
+
+ <section class="youtube-facts js-facts-section active">
+      <div aria-hidden="true" class="svg-container">
+        <svg class="diagonal-line" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+        <line class="js-facts-line" vector-effect="non-scaling-stroke" x1="0" x2="100" y1="0" y2="100">
+        </line></svg>
+      </div>
+      <div class="fact-rotator-wrapper">
+        <div class="fact-rotator js-fade-rotator" data-clickable="true" data-delay="4" data-duration="0.3">
+          <div class="fact js-fade js-first-fact active">
+            <h2 class="-h2">
+              Apprennez le français avec des cours<span class="-underline"> exeptionnels</span>.
+            </h2>
+            <p class="-body -fade-child js-fade-child">
+              Des offres taillés sur mesure pour vous en ligne en presentiels
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="youtube-video -center-wrapper -mobile-no-pad">
+          <img src="dessin.jpg">
+      </div>
+      <div class="-center-wrapper -copy-block">
+        <div class="body-copy">
+          <h3 class="-h2">
+            Cooperation Franco Espagnol
+          </h3>
+          <p class="-body">
+           Toute l'actualité de l'institut disponible sur ce site abonnez vous à notre newsletter
+          </p>
+        </div>
+      </div>
+      <div aria-hidden="true" class="angle -angle-top js-slideshow-angle-top">
+        <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+        <polygon fill="#f3f3f3" points="0,100 100,100 100,0" stroke="none"></polygon></svg>
+      </div>
+    </section>
+
+       <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">A votre service</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -67,16 +120,16 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="blue-text fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i>
+                        <h3>Agenda</h3>
+                        <p class="text-muted">Derniers événement du réseau IFE</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="blue-text fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Cooperation</h3>
+                        <p class="text-muted">L'actualité de la coopertion franco espagnol</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -96,43 +149,6 @@
             </div>
         </div>
     </section>
-
-<!-- 
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div> -->
 
 
   <div class="parallax-container valign-wrapper">
@@ -283,7 +299,7 @@
     <!-- map -->
     <div id="map"></div>
 
-  <footer class="page-footer teal">
+  <footer class="page-footer blue">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -295,26 +311,26 @@
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Institut</a></li>
+            <li><a class="white-text" href="#!">Aprender frances</a></li>
+            <li><a class="white-text" href="#!">Arte y cultura</a></li>
+            <li><a class="white-text" href="#!">Agenda</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">INSTITUT FRANÇAIS</a></li>
+            <li><a class="white-text" href="#!">Barcelona</a></li>
+            <li><a class="white-text" href="#!">Bilbao</a></li>
+            <li><a class="white-text" href="#!">Madrid</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by Théophile Vast in his <i class="fa fa-rocket" aria-hidden="true"></i> 2017 IFE
       </div>
     </div>
   </footer>
@@ -325,6 +341,15 @@
   <script src="js/materialize.js"></script>
    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
   <script src="js/init.js"></script>
+  <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn(3000);
+        $("#index-banner").fadeIn(3000);
+        /*$("#div3").fadeIn(3000);*/
+    });
+});
+</script>
 
 
   </body>

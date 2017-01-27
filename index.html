@@ -11,6 +11,8 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/all.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -36,8 +38,8 @@
       <li><a href="#!">three</a></li>
     </ul>
     <nav>
-      <div class="white navbar-fixed">
-        <a href="#!" id="div1" class="brand-logo"><img style="width: 50%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
+      <div class="white navbar-fixed animated fadeIn">
+        <a href="#!" id="div1" class=" brand-logo"><img style="width: 50%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
         <ul class="right  blue-text hide-on-med-and-down">
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">L'Institut<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -114,7 +116,7 @@
 
 
 
-  <div class="container">
+  <div class="container hideme">
     <div class="section">
 
       <div class="row">
@@ -151,15 +153,15 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="blue-text fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>Cours de français</h3>
+                        <p class="text-muted">Cours en ligne ou presentiels</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="blue-text fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Activités culturels</h3>
+                        <p class="text-muted">Nos événements sont fait avec amour</p>
                     </div>
                 </div>
             </div>
@@ -171,11 +173,11 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper hideme">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h3 class="header col s12 light">Une phrase chouette pour présenter l'institut avec une jolie photo</h3>
         </div>
       </div>
     </div>
@@ -262,11 +264,11 @@
             </div>
         </div>
     </section>
-      <div class="parallax-container valign-wrapper">
+      <div class="parallax-container valign-wrapper hideme">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h3 class="header col s12 light">Une autre phrase chouette pour présenter l'offre de l'institut</h3>
         </div>
       </div>
     </div>
@@ -277,7 +279,7 @@
   <br>
 
   <!-- Clients Aside -->
-    <aside class="clients">
+    <aside class="clients hideme">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -304,7 +306,7 @@
         </div>
     </aside>
     <!-- map -->
-    <div id="map"></div>
+    <div class="hideme" id="map"></div>
 
   <footer class="page-footer blue">
     <div class="container">
@@ -348,15 +350,33 @@
   <script src="js/materialize.js"></script>
    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
   <script src="js/init.js"></script>
-  <script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#div1").fadeIn(3000);
-        $("#index-banner").fadeIn(3000);
-        /*$("#div3").fadeIn(3000);*/
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1000);
+                    
+            }
+            
+        }); 
+    
     });
+    
 });
-</script>
+  </script>
+
 
 
   </body>

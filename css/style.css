@@ -239,3 +239,8 @@ aside.clients {
     padding: 0 100px 20px 20px;
   }
 }
+
+.hideme
+{
+    opacity:0;
+}

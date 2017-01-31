@@ -11,7 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/all.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -72,6 +72,7 @@
         
       </ul>
     </div>
+    
   </nav>
 </nav>
 </div>
@@ -84,6 +85,97 @@
   </div>
   <div class="parallax"><img src="salle.jpg" alt="Unsplashed background img 1"></div>
 </div>
+
+<div class="container">
+  
+        <table>
+  <!--       <thead>
+          <tr>
+              <th data-field="id">Name</th>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+        </thead> -->
+<div class="container ">
+    <div class="row margin-top40">
+  
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Learn French" src="img/menu/learn-french.png">
+        </a>
+          <h4>Learn French</h4>
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Cultural events" src="img/menu/cultural.png">
+        </a>
+          <h4>Cultural events</h4>
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Library" src="img/menu/library.png">
+        </a>
+          <h4>Library</h4>
+          <p>​</p>
+        </div>
+
+  
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Membership" src="img/menu/membership.png">
+        </a>
+          <h4>Membership</h4>
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Berthe Mouchette Competition" src="img/menu/bmc.png">
+        </a>
+          <h4>Berthe Mouchette Competition</h4>
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <img class="img-responsive icon-post70" alt="Services" src="img/menu/services2.png">
+        </a>
+          <h4>Services</h4>
+          <p>​</p>
+        </div>
+
+  
+</div>
+</div>
+
+
+
 
 
 
@@ -401,6 +493,7 @@
   <script src="js/materialize.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
   <script src="js/init.js"></script>
+  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -426,6 +519,11 @@
       });
       
     });
+     $(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
   </script>
   <script type="text/javascript">
     
@@ -439,6 +537,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
   </script>
+
 
 
 

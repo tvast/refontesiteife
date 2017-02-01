@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>IFE maquette</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link href="css/all.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+
+  <!-- The overlay -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content font">
+    <a href="#">Cours</a>
+      <a href="#">Examen</a>
+      <a href="#">Culture</a>
+      <a href="#">Education</a>
+      <a href="#">Mediathèque</a>
+    </div>
+
+  </div>
+
+  <!-- Use any element to open/show the overlay navigation menu -->
+  
+
+  <!-- Dropdown Structure -->
+  <div class="container font">
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+      <li><a href="calendario/index2.html">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+  </ul>
+  <nav>
+    <div class="white navbar-fixed">
+      <a href="#!" id="div1" class=" brand-logo"><img style="width: 50%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
+      <ul class="right  blue-text hide-on-med-and-down">
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Ville<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cours<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Examen<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Culture<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Education<i class="material-icons right">arrow_drop_down</i></a></li> 
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown3">Mediathèque<i class="material-icons right">arrow_drop_down</i></a></li> 
+         <li><a class="dropdown-button" href="#!"><span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span></a></li> 
+        
+      </ul>
+    </div>
+    
+  </nav>
+</nav>
+</div>
+
+
+
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+
+  </div>
+  <div class="parallax"><img src="salle.jpg" alt="Unsplashed background img 1"></div>
+</div>
+
+<div class="container font">
+
+<h1 class="center fill">Découvrir l'institut</h1>
+<br>
+    <div class="row margin-top40">
+  
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center ">
+        <a href="#">
+        <!-- <img class="img-responsive icon-post70" alt="Learn French" src="img/menu2/lesson.png"> -->
+        <!-- <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+        <svg class="fill" width="30%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g>
+        <path fill="#000000" d="M67.316,12.884c-2.501,0-4.898,0.225-7.122,0.727c-3.332,0.762-6.3,2.137-8.472,4.388   c-0.666,0.675-1.229,1.445-1.722,2.276c-0.753-1.289-1.722-2.406-2.873-3.332c-1.826-1.471-4.05-2.475-6.499-3.124   s-5.132-0.935-7.944-0.935H5v74.233h90V12.884H67.316z M8.462,83.655v-5.487h30.003c2.873,0,5.383,0.666,7.07,1.843   c0.848,0.588,1.497,1.289,1.956,2.129c0.251,0.459,0.441,0.961,0.571,1.514H8.462z M48.261,77.753   c-0.813-0.684-1.739-1.255-2.735-1.688c-2.103-0.935-4.517-1.359-7.062-1.359H8.462V16.345h24.222c2.285,0,4.44,0.208,6.361,0.64   c2.882,0.658,5.201,1.809,6.75,3.418c0.779,0.805,1.384,1.731,1.809,2.821c0.415,1.082,0.658,2.345,0.658,3.834V77.753z    M91.538,83.655h-39.6c0.13-0.554,0.32-1.056,0.571-1.514c0.692-1.255,1.817-2.224,3.366-2.916c1.549-0.684,3.505-1.056,5.66-1.056   h30.003V83.655z M91.538,74.707H61.536c-3.384,0.009-6.56,0.753-9.043,2.458c-0.26,0.182-0.511,0.381-0.762,0.588l0.009-50.694   c0-1.982,0.424-3.565,1.142-4.872c0.545-0.987,1.263-1.817,2.163-2.553c1.35-1.09,3.115-1.921,5.21-2.466   c2.086-0.554,4.491-0.822,7.061-0.822h24.222V74.707z"/><rect x="15.203" y="24.861" fill="#000000" width="25.451" height="3.462"/><rect x="15.203" y="34.466" fill="#000000" width="25.451" height="3.462"/><rect x="15.203" y="44.063" fill="#000000" width="25.451" height="3.462"/><rect x="15.203" y="53.661" fill="#000000" width="25.451" height="3.462"/><rect x="15.203" y="63.258" fill="#000000" width="25.451" height="3.462"/><rect x="58.905" y="24.861" fill="#000000" width="25.451" height="3.462"/><rect x="58.905" y="34.466" fill="#000000" width="25.451" height="3.462"/><rect x="58.905" y="44.063" fill="#000000" width="25.451" height="3.462"/><rect x="58.905" y="53.661" fill="#000000" width="25.451" height="3.462"/><rect x="58.905" y="63.258" fill="#000000" width="25.451" height="3.462"/></g><defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs></svg>
+
+        </a>
+          <h4>Cours</h4>
+          <!-- <a class="blue waves-effect waves-light btn">Cours</a> -->
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <svg width="30%" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;opacity:1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" d="m 91.75,6 c -0.432916,0.054639 -0.846045,0.2556207 -1.15625,0.5625 l -64,64 c -0.768355,0.730732 -0.789348,2.102003 -0.04372,2.855914 0.745626,0.75391 2.117046,0.74807 2.856223,-0.01216 l 19.4375,-19.4375 c 8.306567,-0.063 19.051323,-1.1138 28.125,-5 C 86.335172,44.95706 94,37.49176 94,25.5 L 94,8 C 94.008784,6.8640711 92.877065,5.8580983 91.75,6 z M 7.8125,26 C 6.8293323,26.092661 5.9957419,27.012485 6,28 l 0,64 c 1.047e-4,1.047169 0.9528311,1.999895 2,2 l 64,0 c 1.047169,-1.05e-4 1.999895,-0.952831 2,-2 l 0,-30 c 0.01494,-1.056625 -0.943269,-2.028484 -2,-2.028484 -1.056731,0 -2.014943,0.971859 -2,2.028484 l 0,28 -60,0 0,-60 43,0 c 1.056625,0.01494 2.028484,-0.943269 2.028484,-2 0,-1.056731 -0.971859,-2.014943 -2.028484,-2 L 8,26 c -0.062454,-0.0029 -0.1250458,-0.0029 -0.1875,0 z" transform="translate(0,952.36218)"/></g></svg>
+        
+        <!-- <img class="img-responsive icon-post70" alt="Cultural events" src="img/menu/cultural.png"> -->
+        <!-- <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+
+        </a>
+          <h4>Examens</h4>
+         <!--  <a class="blue waves-effect waves-light btn">button</a> -->
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <svg  width="30%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 640" style="enable-background:new 0 0 512 512;" xml:space="preserve"><style type="text/css">
+  .st0{fill:#010101;}
+</style><path class="st0" d="M257,43.3c-11.9-56-55.1,13.4-130,35.9C49.8,102.5-8.3,48.6,9.6,113.1  C47.5,249,136.3,328.8,197.4,309.2c4.8-1.5,18-4.4,22.5-6.5c3.8-32.1,11.2-66.9,25.4-102.8c11.5-29.1,20.6-27.6,34.8-14.8  C281.6,148.5,269.6,102.8,257,43.3z M95,158.9c-19.1,2.6-33.4,17.9-34,13.9c-0.6-4.1,12.8-25.9,32-28.6c19.1-2.6,36.8,15,37.4,19  C130.9,167.3,114.1,156.3,95,158.9z M187.1,248.7c-23.8,7.4-55-9-57.9-18.3s23.6-4.8,47.5-12.2s45.5-25.9,48.4-16.6  C227.9,210.9,210.9,241.3,187.1,248.7z M206.3,126.1c-17.4,8.3-26.4,27.2-28.2,23.5c-1.8-3.7,4.4-28.6,21.8-36.9s39.6,3.1,41.4,6.8  C243,123.2,223.7,117.8,206.3,126.1z"/><path class="st0" d="M375.6,266.3c-75.6-27.9-89.5-106-114-43.7c-51.7,131.3-28.9,248.5,31.6,269.7  c60.5,21.2,128-5.7,207.8-176.3C525.3,264.1,449,293.4,375.6,266.3z M269.3,294.1c0.9-4,13.9,12.4,32.7,16.7  c18.9,4.2,36.5-5.4,35.6-1.4c-0.9,4-19.9,20.1-38.8,15.9C279.9,321,268.4,298.1,269.3,294.1z M363.4,446.3  c-3.6,9-23.7-11.2-46.8-20.5c-23.1-9.3-49.9-7.1-46.3-16.1c3.6-9,36-22.7,59.2-13.4C352.6,405.5,367,437.2,363.4,446.3z   M444.6,362.2c-2.1,3.5-25.1,13.1-41.8,3.4c-16.7-9.7-20.7-35.1-18.7-38.6c2.1-3.5,9.4,16.1,26.1,25.8  C426.9,362.5,446.6,358.6,444.6,362.2z"/></svg>
+       <!--  <img class="img-responsive icon-post70" alt="Library" src="img/menu/library.png"> -->
+        <!-- <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+        </a>
+          <h4>Culture</h4>
+          <!-- <a class="blue waves-effect waves-light btn">button</a> -->
+          <p>​</p>
+        </div>
+
+  
+        <div class="clearfix visible-md visible-lg"></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <!-- <img class="img-responsive icon-post70" alt="Membership" src="img/menu/membership.png"> -->
+        <!-- <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+        <svg width="30%" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" d="m 51.0938,974.54589 43,16.99998 c 1.1192,0.4346 1.9143,1.5963 1.9143,2.7969 0,1.2006 -0.7951,2.3623 -1.9143,2.7969 l -3.0938,1.2187 0,11.06253 c 1.1994,0.919 2,2.3329 2,3.9375 0,2.7318 -2.2682,5 -5,5 -2.7318,0 -5,-2.2682 -5,-5 0,-1.6046 0.8006,-3.0185 2,-3.9375 l 0,-8.6875 -5,1.9688 0,14.6562 c 0,2.4849 -1.4767,4.2017 -3.1875,5.625 -1.7108,1.4233 -3.9134,2.6457 -6.5625,3.7187 -5.2981,2.146 -12.3823,3.6563 -20.25,3.6563 -7.8677,0 -14.9519,-1.5103 -20.25,-3.6563 -2.6491,-1.073 -4.8517,-2.2954 -6.5625,-3.7187 C 21.4767,1021.5601 20,1019.8433 20,1017.3584 l 0,-14.6562 -14.0938001,-5.56253 c -1.1192,-0.4346 -1.9143,-1.5963 -1.9143,-2.7969 0,-1.2006 0.7951,-2.3623 1.9143,-2.7969 L 48.9062,974.54589 c 0.8098,-0.29637 1.665,-0.17591 2.1876,0 z M 50,980.57714 15.1562,994.35837 50,1008.1084 84.8438,994.35837 z m 24,24.50006 -22.9062,9.0625 c -0.695,0.2721 -1.4926,0.2721 -2.1876,0 L 26,1005.0772 l 0,12.2812 c 0,-0.3917 0.017,0.1559 1.0312,1 1.0146,0.8441 2.769,1.8775 5,2.7813 4.4624,1.8074 10.8785,3.2187 17.9688,3.2187 7.0903,0 13.5064,-1.4113 17.9688,-3.2187 2.231,-0.9038 3.9854,-1.9372 5,-2.7813 0.7608,-0.6331 0.9789,-1.0967 1.0312,-1.125 z" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+        </a>
+          <h4>Education</h4>
+          <!-- <a class="blue waves-effect waves-light btn">button</a> -->
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class="clearfix visible-xs visible-sm"></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <!-- <img class="img-responsive icon-post70" alt="Berthe Mouchette Competition" src="img/menu/bmc.png"> -->
+        <!-- <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+        <svg width="30%" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 100 125" version="1.1" x="0px" y="0px"><g transform="translate(0,-952.36216)"><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="22.96829" height="88.999123" x="5.2764888" y="957.56628" rx="2" ry="2.0000002"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="11.484153" height="8.6128187" x="11.018555" y="969.05005" rx="1" ry="1.0000001"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="11.484153" height="8.6128187" x="11.018555" y="1026.4689" rx="1" ry="1.0000001"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="22.96829" height="88.999123" x="33.986816" y="957.56628" rx="2" ry="2.0000002"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="11.484153" height="8.6128187" x="39.728851" y="969.05005" rx="1" ry="1.0000001"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.99999999;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="20.097235" height="77.515442" x="-107.79281" y="967.11328" rx="2" ry="2.0000002" transform="matrix(0.98480874,-0.17364259,0.17365377,0.98480677,0,0)"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.99999999;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="8.6131105" height="5.7418838" x="-102.05074" y="978.59705" rx="1" ry="1.0000001" transform="matrix(0.98480874,-0.17364259,0.17365377,0.98480677,0,0)"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:2.99999999;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="8.6130943" height="5.7418838" x="-102.05074" y="1030.274" rx="0.99999988" ry="1.0000001" transform="matrix(0.98480874,-0.17364259,0.17365377,0.98480677,0,0)"/><rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:22.9260006;stroke-dasharray:none;stroke-opacity:1" width="11.484153" height="8.6128187" x="39.728851" y="1026.4689" rx="1" ry="1.0000001"/></g></svg>
+        </a>
+          <h4>Mediathèque</h4>
+          <!-- <a class="blue waves-effect waves-light btn">button</a> -->
+          <p>​</p>
+        </div>
+
+  
+        <div class=""></div>
+        <div class=""></div>
+
+        <div class="col-xs-6 col-md-4 text-center">
+        <a href="#">
+        <svg width="30%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" x="0px" y="0px"><title>Artboard Copy 63</title><desc>Created with Sketch.</desc><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#000000"><path d="M50.1550099,76.4866007 L31.1865267,86.4589225 C27.2737297,88.5160016 24.706928,86.6553162 25.454847,82.2946135 L29.077505,61.172897 L13.7316796,46.2144143 C10.5661604,43.1287956 11.542592,40.1126387 15.9209865,39.4764208 L37.1283955,36.3948039 L46.6126371,17.1776313 C48.5690356,13.213535 51.7393052,13.2101329 53.6973828,17.1776313 L63.1816244,36.3948039 L84.3890334,39.4764208 C88.7636734,40.1120932 89.7465762,43.1261475 86.5783402,46.2144143 L71.2325149,61.172897 L74.8551728,82.2946135 C75.6024505,86.651577 73.0396482,88.5177671 69.1234932,86.4589225 L50.1550099,76.4866007 Z M52.1131763,70.1093301 C51.1356801,69.59543 49.5532412,69.5941706 48.5733495,70.1093301 L35.7641193,76.843541 C33.8113874,77.8701529 32.5323727,76.9300044 32.9036505,74.7652888 L35.3499958,60.5020013 C35.5366809,59.4135433 35.0488781,57.9081653 34.2561291,57.1354259 L23.8932442,47.0341097 C22.3134509,45.4941918 22.812348,43.9872547 24.985846,43.671427 L39.3070008,41.5904414 C40.3998748,41.4316375 41.680835,40.502522 42.1707809,39.5097834 L48.575396,26.5326157 C49.5517619,24.5542822 51.1391119,24.5630924 52.1111298,26.5326157 L58.5157449,39.5097834 C59.004493,40.5000952 60.2839728,41.4312483 61.379525,41.5904414 L75.7006798,43.671427 C77.8839004,43.9886675 78.3660396,45.5010495 76.7932816,47.0341097 L66.4303967,57.1354259 C65.6395856,57.9062762 65.1493874,59.4108759 65.33653,60.5020013 L67.7828753,74.7652888 C68.1558139,76.9396877 66.8664423,77.8655811 64.9224065,76.843541 L52.1131763,70.1093301 Z"/></g></g></svg>
+        <!-- <img class="img-responsive icon-post70" alt="Services" src="img/menu/services2.png"> -->
+       <!--  <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i> -->
+        </a>
+          <h4>En +</h4>
+          <!-- <a class="blue waves-effect waves-light btn">button</a> -->
+          <p>​</p>
+        </div>
+
+  
+</div>
+</div>
+
+
+
+
+
+
+<section class="font youtube-facts js-facts-section active">
+  <div aria-hidden="true" class="svg-container">
+    <svg class="diagonal-line" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+      <line class="js-facts-line" vector-effect="non-scaling-stroke" x1="0" x2="100" y1="0" y2="100">
+      </line></svg>
+    </div>
+    <div class="fact-rotator-wrapper">
+      <div class="fact-rotator js-fade-rotator" data-clickable="true" data-delay="4" data-duration="0.3">
+        <div class="fact js-fade js-first-fact active">
+          <h2 class="-h2 fill">
+            Apprennez le français avec des cours<span class="-underline fill"> exeptionnels</span>.
+          </h2>
+          <p class="-body -fade-child js-fade-child">
+            Des offres taillés sur mesure pour vous en ligne en presentiels
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="center youtube-video -center-wrapper -mobile-no-pad">
+      <img class="z-depth-4" width="50%" src="dessin.jpg">
+    </div>
+    <div class="-center-wrapper -copy-block">
+      <div class="body-copy">
+        <h3 class="-h2 fill">
+          Cooperation Franco Espagnol
+        </h3>
+        <p class="-body">
+         Toute l'actualité de l'institut disponible sur ce site abonnez vous à notre newsletter
+       </p>
+     </div>
+   </div>
+   <div aria-hidden="true" class="angle -angle-top js-slideshow-angle-top">
+    <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+      <polygon fill="#f3f3f3" points="0,100 100,100 100,0" stroke="none"></polygon></svg>
+    </div>
+  </section>
+
+
+
+
+
+<!-- 
+  <div class="container hideme">
+    <div class="section">
+
+      <div class="row">
+   
+ 
+        <section id="services">
+          <div class="container ">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">A votre service</h2>
+                <hr class="primary">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 text-center z-depth-4">
+                <div class="service-box">
+                  <i class="blue-text fa fa-4x fa fa-calendar-check-o text-primary sr-icons"></i>
+                  <h3>Agenda</h3>
+                  <p class="text-muted">Derniers événement du réseau IFE</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center z-depth-4">
+                <div class="service-box">
+                  <i class="blue-text fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                  <h3>Cooperation</h3>
+                  <p class="text-muted">la coopertion franco espagnol</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center z-depth-4">
+                <div class="service-box">
+                  <i class="blue-text fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                  <h3>Cours de français</h3>
+                  <p class="text-muted">Cours en ligne ou presentiels</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center z-depth-4">
+                <div class="service-box">
+                  <i class="blue-text fa fa-4x fa-heart text-primary sr-icons"></i>
+                  <h3>Activités culturels</h3>
+                  <p class="text-muted">Nos événements sont fait avec amour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div> -->
+
+
+  <div class="parallax-container valign-wrapper hideme">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">Une phrase chouette pour présenter l'institut avec une jolie photo</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">This First Heading
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">The Second Heading
+                <span class="text-muted">Is Pretty Cool Too.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">The Third Heading
+                <span class="text-muted">Will Seal the Deal.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+    
+
+    </div>
+    <!-- /.container -->
+    <div class="parallax-container valign-wrapper hideme">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <h3 class="header col s12 light">Une autre phrase chouette pour présenter l'offre de l'institut</h3>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Clients Aside -->
+    <aside class="clients hideme">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img width="50%" src="img/logos/qlo1.jpg" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img src="img/logos/qlo2.jpg" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img src="img/logos/qlo3.jpg" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img src="img/logos/qlo4.jpg" class="img-responsive img-centered" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+<!-- 
+    <legend align="center">Our Happy Client's</legend>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner">
+  
+    <div class="item active container">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/orange.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+        
+    </div>
+    
+    <div class="item container">
+       <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/orange.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+      </div>
+    
+    <div class="item container">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/orange.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+        <img class="col-md-2 col-sm-2 col-xs-2 logo img-responsive" src="img/logos/accord.png" alt="...">
+     </div>
+    
+  </div>
+
+    <div align="center" style="margin-top:20px;">
+
+          <a class="left" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+    </div>
+  
+  </div> -->
+  <!-- map -->
+  <div class="hideme" id="map"></div>
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Bienvenidos a la página Facebook oficial y común de la Embajada de Francia en España y del Institut français de España</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Pages</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Institut</a></li>
+            <li><a class="white-text" href="#!">Aprender frances</a></li>
+            <li><a class="white-text" href="#!">Arte y cultura</a></li>
+            <li><a class="white-text" href="#!">Agenda</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Institut et alliance</h5>
+          <ul>
+            <li><a class="white-text" href="#!">INSTITUT FRANÇAIS</a></li>
+            <li><a class="white-text" href="#!">Barcelona</a></li>
+            <li><a class="white-text" href="#!">Bilbao</a></li>
+            <li><a class="white-text" href="#!">Madrid</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by Théophile Vast in his <i class="fa fa-rocket" aria-hidden="true"></i> 2017 IFE
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+  <script src="js/init.js"></script>
+  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      
+      /* Every time the window is scrolled ... */
+      $(window).scroll( function(){
+        
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+          
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object ){
+            
+            $(this).animate({'opacity':'1'},1000);
+            
+          }
+          
+        }); 
+        
+      });
+      
+    });
+     $(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
+  </script>
+  <script type="text/javascript">
+    
+    /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+  </script>
+
+
+
+
+</body>
+</html>

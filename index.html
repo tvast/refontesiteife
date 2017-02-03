@@ -15,13 +15,15 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+    <link href="js/intro.js-2.4.0/introjs.css" rel="stylesheet">
     
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
-    <div class="container">
+    <div data-step="2" data-intro="Switch langue" class="container">
       <div class="switch">
         <label>
           Off
@@ -83,8 +85,8 @@
 
 
       <div class="white navbar-fixed">
-        <a href="#!" id="div1" class=" brand-logo animated slideInDown"><img style="width: 60%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
-        <ul class="right  blue-text hide-on-med-and-down">
+        <a onclick="javascript:introJs().setOption('showProgress', true).start();" href="#!" id="div1" class=" brand-logo animated slideInDown"><img style="width: 60%" src="http://www.institutfrancais.es/adjuntos/logotipo_20160719.jpg"></a>
+        <ul data-step="1" data-intro="Get it, use it." class="right  blue-text hide-on-med-and-down">
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-button" href="#!" data-activates="dropdown4">Ville<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Cours<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -109,14 +111,14 @@
 
 
 
- <div id="index-banner" class="parallax-container">
+ <div  id="index-banner" class="parallax-container">
   <div class="section no-pad-bot">
 
   </div>
   <div class="parallax"><img src="salle.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
-<div class="container font">
+<div data-step="3"  data-intro="Menu contextuel animé" class="container font">
 
   <h1 class="center blue-text tlt">Découvrir l'institut</h1>
   <br>
@@ -236,7 +238,7 @@
 
 
 
-<section class="font youtube-facts js-facts-section active">
+<section data-step="4"  data-intro="partie présentation isntitut" class="font youtube-facts js-facts-section active">
   <div aria-hidden="true" class="svg-container">
     <svg class="diagonal-line" height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
       <line class="js-facts-line" vector-effect="non-scaling-stroke" x1="0" x2="100" y1="0" y2="100">
@@ -290,7 +292,7 @@
           </div>
         </section>
 
-        <div class="parallax-container valign-wrapper hideme">
+        <div data-step="5"  data-intro="Partie agenda avec deux derniers événements" class="parallax-container valign-wrapper hideme">
           <div class="section no-pad-bot">
             <div class="container">
               <div class="row center">
@@ -303,7 +305,7 @@
         </div>
 
         <!-- Page Content -->
-        <div class="container">
+        <div  class="container">
 
           <hr class="featurette-divider">
 
@@ -348,7 +350,7 @@
 
 
 
-  <div class="parallax-container valign-wrapper hideme">
+  <div data-step="6"  data-intro="histoire de l'institut francais d'Espagne" class="parallax-container valign-wrapper hideme">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -360,7 +362,7 @@
   </div>
 
   <!-- About Section -->
-  <section id="about">
+  <section data-step="6" data-intro="Get it, use it." id="about">
     <div class="container ">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -439,7 +441,7 @@
         </div>
       </div>
     </section>
-    <div class="parallax-container valign-wrapper hideme">
+    <div  data-step="7"  data-intro="TIFE" class="parallax-container valign-wrapper hideme">
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
@@ -522,7 +524,7 @@
   <div class="hideme" id="map"></div>
 
 
-  <footer class="page-footer blue">
+  <footer data-step="8"  data-intro="Rappel des liens du site" class="page-footer blue">
     <div class="container">
       <div class="row">
 
@@ -624,6 +626,7 @@
         $('.tlt').textillate();
       })
     </script>
+    <script type="text/javascript" src="js/intro.js-2.4.0/intro.js"></script>
 
 
 

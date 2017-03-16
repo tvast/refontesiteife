@@ -16,13 +16,11 @@
 
 .quotes {
     position: absolute;
-    /*bottom: 20px;*/
+    bottom: 20px;
     width: 100%;
     left: 0;
-    top:  2800px;
+    top:  3000px;
     height: 50%;
-    z-index: 100;
-    /*display: none;*/
 }
 
 .quotes article {
